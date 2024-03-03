@@ -1,0 +1,36 @@
+name: MiniEssentials
+version: '${project.version}'
+main: dev.stojan.miniessentials.MiniEssentials
+api-version: '1.20'
+commands:
+  fly:
+    description: "Toggle flying"
+    usage: "/<command>"
+    permission: miniessentials.fly
+  home:
+    description: "Teleport to home"
+    usage: "/<command>"
+  sethome:
+    description: "Set home"
+    usage: "/<command>"
+  tpa:
+    description: "Send teleport request to someone"
+    usage: "/<command> <player name>"
+  tpaccept:
+    description: "Accept the teleport request"
+    usage: "/<command>"
+    aliases: [tpyes]
+  tpdeny:
+    description: "Deny the teleport request"
+    usage: "/<command>"
+    aliases: [tpno]
+  tpacancel:
+    description: "Cancel all teleport requests"
+    usage: "/<command>"
+  back:
+    description: "Teleport yourself to your last coordinates"
+    usage: "/<command>"
+permissions:
+  miniessentials.fly:
+    description: "Allow flying"
+    default: op
